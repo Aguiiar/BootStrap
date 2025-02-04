@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>clothing's ui</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+
+  
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+                <div class="form-group">
+                  <label for="loginEmail">Email</label>
+                  <input type="email" class="form-control" id="loginEmail">
+                </div>
+                <div class="form-group">
+                  <label for="loginSenha">Senha</label>
+                  <input type="password" class="form-control" id="loginSenha">
+                </div>
+                <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+                <small class="form-text text-muted">Esquceu a senha? <a href="">clique aqui</a>.</small>
+              </form>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--/modal-->
+
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow">
+        <a href="index.html" class="navbar-brand">
+            <!--Logo-->
+            <img src="img/logo.png" alt="clothing's ui">
+            <!--Logo-->
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav ml-auto"> 
+                <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropdownMarcasDeRoupa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMarcasDeRoupa"> <a class="dropdown-item" href="marcas.html">Lascote</a> <a class="dropdown-item" href="marcas.html">Calvin klein</a> <a class="dropdown-item" href="marcas.html">Tommy Hilfiger</a> </div>
+                </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Promoções</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Contato</a> </li>
+                <li class="nav-item"> <a class="btn btn-outline-success ml-md-2" href="#" data-toggle="modal" data-target="#modalLogin">login</a> <!--data-toggle="modal" data-target="#modalLogin" você coloca onde que vc quer que apareça o modal, data-target o nome que vai nele tem que ser o mesmo que fica no modal principal, sem ser esse do botão e sim o do topo que é no modal fade-->
+
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="container-fluid">
+        <div class="row bg-dark text-white">
+            <div class="col-lg-7 p-0">
+             
+
+                <div id="carouselRoupas" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                   
+                        <li data-target="#carouselRoupas" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselRoupas" data-slide-to="1"></li>
+                        <li data-target="#carouselRoupas" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          
+                            <img src="img/CamisetaCarrossel-1.jpg" class="d-block w-100 img-carrosel" alt="Roupas">
+                            <div class="carousel-caption">
+                                <h3 class="display-4 text-white font-weight-bold">Estilo</h3>
+                           
+                            </div>
+                        </div>
+                        <div class="carousel-item"> <img src="img/CamisetaCarrossel-2.jpg" class="d-block w-100 img-carrosel" alt="Roupas">
+                            <div class="carousel-caption">
+                                <h3 class="display-4 text-white font-weight-bold">Charme</h3>
+                            </div>
+                        </div>
+                        <div class="carousel-item"> <img src="img/CamisetaCarrossel-3.jpg" class="d-block w-100 img-carrosel" alt="Roupas">
+                            <div class="carousel-caption">
+                                <h3 class="display-4 text-white fw-bold font-weight-bold"><strong>Elegancia</strong></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselRoupas" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Anterior</span> </a>
+                    <a class="carousel-control-next" href="#carouselRoupas" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Próximo</span> </a>
+                </div>
+            </div>
+            <div class="col-lg-5 p-4 align-self-center">
+             
+                <h1 class="display-4">vista-se bem sinta-se bem!</h1>
+                <p class="lead">O melhor lugar para comprar roupas é com a Clothing's ui. As melhores marcas da atualidade.</p>
+                <form action="">
+                    <div class="input-group input-group-lg">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Email">
+                        <span class="input-group-append">
+          <button class="btn btn-primary" type="button">Inscreva-se</button>
+          </span> </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="py-5 bg-light text-center">
+        <div class="container">
+            <div class="my-5"> <span class="h6 display d-block">TUDO DE MELHOR PARA VOCÊ</span>
+                <h2 class="display-4 text-primary">Aproveite as Vantagens</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="icone d-flex justify-content-center">
+                  
+                    <img src="img/camiseta-icone.png" alt="Camiseta icone"> </div>
+                <h3>Casemitas</h3>
+                <p>Coleções atuais para todos os estilos.</p>
+            </div>
+            <div class="col-xl-4">
+                <div class=" icone d-flex justify-content-center"> <img src="img/calca-icone.png" alt="Calça icone"> </div>
+                <h3>Calças</h3>
+                <p>Elegância para todos os tipos.</p>
+            </div>
+            <div class="col-xl-4">
+                <div class=" icone d-flex justify-content-center"> <img src="img/sapato-icone.png" alt="Tênis icone"> </div>
+                <h3>Tênis</h3>
+                <p>Não passe despercebido, onde quer que esteja.</p>
+            </div>
+        </div>
+        
+        <a href="outfit.html" class="btn btn-primary btn-lg mt-4">Monte seu Outfit</a> </section>
+
+    
+    <section id="imagem-home" class="p-md-5">
+        
+        <blockquote class="blockquote text-center text-white p-md-5 p-3">
+            <p id="text-blockquote" class="display-4"><em> "Invista na sua autoestima, pois só assim você conseguirá ser feliz consigo mesmo."</em></p>
+            <footer class="blockquote-footer text-white">Josep</footer>
+        </blockquote>
+    </section>
+
+
+
+    <section class="container">
+        <div class="my-5 text-center">
+            <span class="h6 d-block">AINDA ESTÁ COM DÚVIDAS?</span>
+            <h2 class="display-4 text-primary">Perguntas Frequentes</h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6" id="perguntasFrequentes" data-children=".pergunta">
+            
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" href="#pergunta1" aria-expanded="true" aria-controls="pergunta1">Os produtos são originais</a>
+                    
+                    <div id="pergunta1" data-parent="#perguntasFrequentes" class="collapse show" role="tabpanel">
+                        <p>Todos os nossos produtos são originais, vindo direto das lojas de marcas oficiais, onde temos parcerias com as lojas mais conceituadas.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" href="#pergunta2" aria-expanded="true" aria-controls="pergunta2">Como receber promoções?</a>
+                    <div id="pergunta2" data-parent="#perguntasFrequentes" class="collapse" role="tabpanel">
+                        <p>Todos os nosso produtos são originais, vindo direto das lojas de marcas oficiais, onde temos parceria com as lojas mais conceituosas.</p>
+                    </div>
+                </div>
+
+                <div class="dropdown-divider"></div>
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" href="#pergunta3" aria-expanded="true" aria-controls="pergunta3">Cupom de desconto</a>
+                    <div id="pergunta3" class="collapse" data-parent="#perguntasFrequentes" role="tabpanel">
+                        <p>Todos os nosso produtos são originais, vindo direto das lojas de marcas oficiais, onde temos parceria com as lojas mais conceituosas.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+
+                <div class="pergunta py-2">
+                    <a class="lead" data-toggle="collapse" href="#pergunta4" aria-expanded="true" aria-controls="pergunta4">Como funciona os sorteios?</a>
+                    <div id="pergunta4" data-parent="#perguntasFrequentes" class="collapse" role="tabpanel">
+                        <p>Todos os nosso produtos são originais, vindo direto das lojas de marcas oficiais, onde temos parceria com as lojas mais conceituosas.</p>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+            </div>
+        </div>
+        <div class="text-center my-4">
+            <p class="small m-1">FALE CONOSCO PARA MAIS DÚVIDAS</p>
+            <a class="btn btn-primary btn-lg" href="contato.html">Entre em Contato</a>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">PÁGINAS</h4>
+                    
+
+                    <ul class="list-unstyled">
+                   
+                        <li><a href="promocoes.html">PROMOÇÕES</a></li>
+                        <li><a href="promocoes.html">LOGIN</a></li>
+
+                    </ul>
+                </div>
+
+
+
+                <div class="col-md-3 col-6">
+                    <h4 class="h6">MARCAS</h4>
+                   
+
+                    <ul class="list-unstyled">
+                   
+                        <li><a href="marca.html">Lacoste</a></li>
+                        <li><a href="marca.html">Calvin Klein</a></li>
+                        <li><a href="marca.html">Tommy Hilfiger</a></li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-md-4">
+                 
+                    <h4 class="h6">DADOS DE CONTATO</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>clothingsui@gmail.com</li>
+                        <li>(11) 4444-4444</li>
+                        <li>De Seg. à Sex. das 8h às 18h</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2">
+                   
+                    <h4 class="h6">REDES SOCIAIS</h4>
+                    <ul class="list-unstyled">
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">FACEBOOK</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">TWITTER</a></li>
+                        <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">INSTAGRAM</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="bg-primary text-center py-4">
+            <p class="mb-0">Clothing's ui @ 2022. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+
+</html>

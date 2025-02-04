@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>clothing's ui</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" class="form-control" id="loginEmail">
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha</label>
+            <input type="password" class="form-control" id="loginSenha">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+          <small class="form-text text-muted">Esquceu a senha? <a href="">clique aqui</a>.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--/modal-->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow"> <a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="clothing's ui"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropdownMarcasDeRoupa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMarcasDeRoupa"> <a class="dropdown-item" href="marcas.html">Lascote</a> <a class="dropdown-item" href="marcas.html">Calvin klein</a> <a class="dropdown-item" href="marcas.html">Tommy Hilfiger</a> </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Promoções</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="#">Contato</a> </li>
+      <li class="nav-item active"> <a class="btn btn-outline-success ml-md-2" href="#" data-toggle="modal" data-target="#modalLogin">Inscreva-se</a> </li>
+    </ul>
+  </div>
+</nav>
+<section class="container">
+  <div class="my-5 text-center"> <span class="h6 d-block">MONTE UM OUTFIT DE CLASSE</span>
+    <h1 class="display-4 text-primary">INSCREVA-SE</h1>
+  </div>
+  <div class="row">
+    <form class="col-lg-6" action="">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputNome">Nome</label>
+          <input type="text" class="form-control" id="inputNome" placeholder="Nome completo">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCpf">CPF</label>
+          <input type="text" class="form-control" id="inputCpf" placeholder="xxx.xxx.xxx-xx">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">E-mail</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Seu e-mail">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputSenha">Senha</label>
+          <input type="password" class="form-control" id="inputSenha" placeholder="Senha de acesso">
+        </div>
+        <div class="form-group col-12">
+          <label for="inputEndereco">Endereço</label>
+          <input type="text" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro.">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputCidade">Cidade</label>
+          <input type="text" class="form-control" id="inputCidade">
+        </div>
+        <div class="form-group col-md-3 col-6">
+          <label for="inputEstado">Estado</label>
+          <select id="inputEstado" class="form-control">
+            <option>Escolha...</option>
+            <option>São Paulo</option>
+            <option>Rio de Janeiro</option>
+            <option>Minas Gerais</option>
+            <option>Bahia</option>
+          </select>
+        </div>
+        <div class="form-group col-md-3 col-6">
+          <label for="inputCep">Cep</label>
+          <input type="text" class="form-control" id="inputCep" placeholder="xxxxx-xx">
+        </div>
+      </div>
+      <div class="bg-light rounded box-shadow p-3 form-group"> 
+        
+        <!--form-group apenas cria um linha para baixo-->
+        <h2 class="h6 text-primary">FORMA DE PAGAMENTO</h2>
+        <!--Tab-->
+        <nav class="nav btn-group mb-3" id="formaPagamento" role="tablist">
+          <button type="button" class="btn btn-secondary active btn-sm" id="nav-cartao-tab" data-toggle="tab" href="#nave-cartao" role="tab" aria-controls="nave-cartao" aria-selected="true">Cartão de Crédito</button>
+          <button type="button" class="btn btn-secondary btn-sm" id="nave-boleto-tab" data-toggle="tab" href="#nave-boleto" role="tab" aria-controls="nave-boleto" aria-selected="false">Boleto Bancário</button>
+        </nav>
+        <div class="tab-content" id="formPagamentoConteudo">
+          <div class="tab-pane fade show active" id="nave-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputNomeCartao">Nome no Cartão</label>
+                <input type="text" class="form-control" id="inputNomeCartao" placeholder="Nome impresso no cartão">
+              </div>
+              <div class="form-group col-md-3 col-6">
+                <label for="inputMes">Mês</label>
+                <select id="inputMes" class="form-control">
+                  <option>Expira mês...</option>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+                  <option>05</option>
+                  <option>06</option>
+                  <option>07</option>
+                  <option>08</option>
+                  <option>09</option>
+                  <option>10</option>
+                  <option>11</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="form-group col-md-3 col-6">
+                <label for="inputAno">Ano</label>
+                <select id="inputAno" class="form-control">
+                  <option>Expira ano...</option>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputNumeroCartao">Número do Cartão</label>
+                <input type="text" class="form-control" id="inputNumeroCartao" placeholder="5555 5555 5555 5555">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputCodigoSeguranca">Código de Segurança</label>
+                <input type="text" class="form-control" id="inputCodigoSeguranca" placeholder="XXX">
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nave-boleto" role="tabpanel" aria-labelledby="nave-boleto-tab">
+            <p class="lead"> Clique em Contratar Plano que enviaremos um boleto para seu e-mail.</p>
+          </div>
+        </div>
+      </div>
+      <div class=" form-group form-check">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          Concordo com os <a href="#">Termos de Condições</a>. </label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-lg">Contratar Plano</button>
+    </form>
+    <div class="col-lg-5 mx-auto order-first order-lg-1 mb-5">
+      <h2 class="h6 text-primary">PLANO ESCOLHIDO</h2>
+      <div class="bg-light rounded p-4 box-shadow">
+        <h2>Outfit Gold</h2>
+        <ul class="lista-plano list-unstyled">
+          <li>Cupons de 5% todo mês</li>
+          <li>Frete grátis acima de R$250,00</li>
+          <li>Seja o primeiro a receber as promoções</li>
+        </ul>
+        <form>
+          <div class="form-group">
+            <select class="form-control bg-light" id="inputMarca">
+              <option>Tommy Hilfiger</option>
+              <option>Todas</option>
+              <option>Tommy Hilfiger</option>
+              <option>Lacoste</option>
+              <option>Calvin klein</option>
+            </select>
+          </div>
+        </form>
+        <div class="row mt-4">
+          <div class="col"> <span class="h4">R$64,99</span> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3 col-6"> 
+        <!--col-3 porque quero 3 colunas-->
+        <h4 class="h6">PÁGINAS</h4>
+        <!--Usando a logica dos h ou seja se fez 1 vai seguindo h1, h2 e etc
+                              Para não sair disso podemos usar as class="e o h aq" exemplo 
+                              class="h2" para seguir a semantica-->
+        
+        <ul class="list-unstyled">
+          <!--Tira a bolinha da lista o list-unstyled-->
+          <li><a href="promocoes.html">PROMOÇÕES</a></li>
+          <li><a href="promocoes.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-6"> 
+        <!--col-3 porque quero 3 colunas-->
+        <h4 class="h6">MARCAS</h4>
+        <!--Usando a logica dos h ou seja se fez 1 vai seguindo h1, h2 e etc
+                              Para não sair disso podemos usar as class="e o h aq" exemplo 
+                              class="h2" para seguir a semantica-->
+        
+        <ul class="list-unstyled">
+          <!--Tira a bolinha da lista o list-unstyled-->
+          <li><a href="marca.html">Lacoste</a></li>
+          <li><a href="marca.html">Calvin Klein</a></li>
+          <li><a href="marca.html">Tommy Hilfiger</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4"> 
+        <!--posição 4 dentro de 12-->
+        <h4 class="h6">DADOS DE CONTATO</h4>
+        <ul class="list-unstyled text-secondary">
+          <li>clothingsui@gmail.com</li>
+          <li>(11) 4444-4444</li>
+          <li>De Seg. à Sex. das 8h às 18h</li>
+        </ul>
+      </div>
+      <div class="col-md-2"> 
+        <!-- class outline - quando passa o mouse ele muda cor-->
+        <h4 class="h6">REDES SOCIAIS</h4>
+        <ul class="list-unstyled">
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">FACEBOOK</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">TWITTER</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">INSTAGRAM</a></li>
+        </ul>
+      </div>
+      <!--no rodape nos botoes tem que ter o btn-block e style="max-width:140px" se não vai ficar zuado e por opção o btn-sm--> 
+      
+    </div>
+  </div>
+  <div class="bg-primary text-center py-4">
+    <p class="mb-0">Clothing's ui @ 2022. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script> 
+<script type="text/javascript" src="js/popper.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

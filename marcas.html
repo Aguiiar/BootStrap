@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>clothing's ui</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginTitulo" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginTitulo">Entre na Sua Conta</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="loginEmail">Email</label>
+            <input type="email" class="form-control" id="loginEmail">
+          </div>
+          <div class="form-group">
+            <label for="loginSenha">Senha</label>
+            <input type="password" class="form-control" id="loginSenha">
+          </div>
+          <button type="submit" class="btn btn-primary">Entrar na Conta</button>
+          <small class="form-text text-muted">Esquceu a senha? <a href="">clique aqui</a>.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top py-3 box-shadow"> <a href="index.html" class="navbar-brand"> <img src="img/logo.png" alt="clothing's ui"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle active" href="#" id="dropdownMarcasDeRoupa" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Marcas</a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMarcasDeRoupa"> <a class="dropdown-item" href="marcas.html">Lascote</a> <a class="dropdown-item" href="marcas.html">Calvin klein</a> <a class="dropdown-item" href="">Tommy Hilfiger</a> </div>
+      </li>
+      <li class="nav-item"> <a class="nav-link" href="promocoes.html">Promoções</a> </li>
+      <li class="nav-item"> <a class="nav-link" href="contato.html">Contato</a> </li>
+      <li class="nav-item"> <a class="btn btn-outline-success ml-md-2" href="#" data-toggle="modal" data-target="#modalLogin">login</a> </li>
+    </ul>
+  </div>
+</nav>
+<section class="container">
+  <div class="text-center my-5"> <span class="h6 d-block">O estilo da sua vida</span>
+    <h1 class="display-4 text-primary">Aproveite as Vantagens</h1>
+  </div>
+  <div class="row">
+    <div class="col-md"> <img class="img-fluid mb-4" src="img/foto1-galeria.png" alt="foto1"> <img class="img-fluid mb-4" src="img/foto2-galeria.jpg" alt="foto2"> <img class="img-fluid mb-4" src="img/foto3-galeria.jpg" alt="foto3"> </div>
+    <div class="col-md"> <img class="img-fluid mb-4" src="img/foto4-galeria.jpg" alt="foto4"> <img class="img-fluid mb-4" src="img/foto5-galeria.jpg" alt="foto5"> </div>
+    <div class="col-md"> <img class="img-fluid mb-4" src="img/foto6-galeria.jpg" alt="foto6"> <img class="img-fluid mb-4" src="img/foto7-galeria.jpg" alt="foto7"> </div>
+  </div>
+</section>
+<section class="container">
+  <div class="text-center my-5"> <span class="h6 d-block">Descubra promoções e liquidações na sua região</span>
+    <h1 class="display-4 text-primary">Próximos Eventos</h1>
+  </div>
+  <table class="table table-hover table-responsive-md">
+    <thead>
+      <tr>
+        <th scope="col">Data</th>
+        <th scope="col">Endereço</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Mapa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">18/06</th>
+        <td>Shopping Anália Franco, 1300</td>
+        <td>Camisetas Manga Curta</td>
+        <td><a href="#" class="btn btn-outline-primary btn-sm">Ver localização</a></td>
+      </tr>
+      <tr>
+        <th scope="row">26/06</th>
+        <td>Avenida lopes, 16</td>
+        <td>Camisetas Regatas</td>
+        <td><a href="#" class="btn btn-outline-primary btn-sm">Ver localização</a></td>
+      </tr>
+      <tr>
+        <th scope="row">01/07</th>
+        <td>Shopping Itaquera, 1</td>
+        <td>Camisetas Manga Longa e Calças Jeans</td>
+        <td><a href="#" class="btn btn-outline-primary btn-sm">Ver localização</a></td>
+      </tr>
+      <tr>
+        <th scope="row">15/08</th>
+        <td>Rua Pedro Siqueira, 15</td>
+        <td>Blusas de Frio e Moletom</td>
+        <td><a href="#" class="btn btn-outline-primary btn-sm">Ver localização</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<footer class="bg-dark text-white mt-5">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3 col-6">
+        <h4 class="h6">PÁGINAS</h4>
+        <ul class="list-unstyled">
+          <li><a href="promocoes.html">PROMOÇÕES</a></li>
+          <li><a href="promocoes.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-6">
+        <h4 class="h6">MARCAS</h4>
+        <ul class="list-unstyled">
+          <li><a href="marca.html">Lacoste</a></li>
+          <li><a href="marca.html">Calvin Klein</a></li>
+          <li><a href="marca.html">Tommy Hilfiger</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4 class="h6">DADOS DE CONTATO</h4>
+        <ul class="list-unstyled text-secondary">
+          <li>clothingsui@gmail.com</li>
+          <li>(11) 4444-4444</li>
+          <li>De Seg. à Sex. das 8h às 18h</li>
+        </ul>
+      </div>
+      <div class="col-md-2">
+        <h4 class="h6">REDES SOCIAIS</h4>
+        <ul class="list-unstyled">
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">FACEBOOK</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">TWITTER</a></li>
+          <li><a class="btn btn-outline-secondary btn-sm btn-block mb-2" href="marca.html" style="max-width:140px">INSTAGRAM</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-primary text-center py-4">
+    <p class="mb-0">Clothing's ui @ 2022. Todos os direitos reservados.</p>
+  </div>
+</footer>
+<script type="text/javascript" src="js/jquery-3.5.1.slim.min.js"></script> 
+<script type="text/javascript" src="js/popper.min.js"></script> 
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>
